@@ -1,0 +1,378 @@
+*::selection
+{
+    color: white;
+    background-color: #FF8700;
+}
+
+*, ::before, ::after
+{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Cairo';
+	color: #FF8700;
+	text-align: center;
+	background-color: black;
+}
+
+/*************************************/
+
+header
+{
+    min-height: 25vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+header > img 
+{
+    width: 40%;
+    margin: 0 auto;
+}
+
+header > img:hover
+{
+    cursor: pointer;
+}
+
+/*************************************/
+
+.container_accueil
+{  
+    min-height: 75vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_accueil div
+{
+    margin: 0;
+    padding: 15px;
+}
+
+.container_accueil div p 
+{   
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 1.1em;
+}
+
+.container_accueil div:nth-child(1) > p
+{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px #FF8700 solid;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 5px;
+}
+
+.container_accueil div:nth-child(2) > p
+{
+    text-align: left;
+    background-color: rgba(255,255,255,.1);
+    border-left: 1px #FF8700 solid;
+    border-right: 1px #FF8700 solid;
+    box-sizing: border-box;
+}
+
+.container_accueil div:nth-child(2) > p:nth-child(1)
+{
+    border-top: 1px #FF8700 solid;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container_accueil div:nth-child(2) > p:nth-child(4)
+{
+    border-bottom: 1px #FF8700 solid;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container_accueil div:nth-child(2) > p span
+{
+    font-size: 1em;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+}
+
+.bouton_commencer
+{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 0 5px 0;
+    font-family: 'Cairo';
+    font-size: 1em;
+    font-weight: bold;
+    color: #FF8700;
+    background-color: rgba(255,255,255,.1);
+    border: 1px #FF8700 solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: color .3s linear, border .3s linear, width .3s linear;
+}
+
+.bouton_commencer:hover
+{
+    width: 55%;
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+    transition: color .3s linear, border .3s linear, width .3s linear;
+}
+
+/*************************************/
+
+.container_jeux
+{
+    min-height: 75vh;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container_jeux div
+{
+    margin: 0;
+    padding: 15px;
+}
+
+.container_jeux div p 
+{
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 1.1em;
+}
+
+.produit
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titre
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px #FF8700 solid;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 5px;
+}
+
+.image
+{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 5px 0 5px 0;
+}
+
+.saisie
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.prix
+{
+    display: none;
+    width: 50%;
+    align-self: center;
+}
+
+.indice,
+.nombre_tentative
+{
+    width: 50%;
+    align-self: center;
+    background-color: rgba(255,255,255,.1);
+}
+
+.indice
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nombre_tentative
+{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.formulaire_saisie_prix
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+}
+
+.saisie_prix
+{
+    width: 30%;
+    height: 50px;
+    margin: 2% auto;
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: 'Cairo';
+    color: #FF8700;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255,255,255,.1);
+    border: 1px #FF8700 solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    -moz-appearance: textfield; /* cache les flèches +/- (firefox) */
+}
+
+.saisie_prix::-webkit-outer-spin-button,
+.saisie_prix::-webkit-inner-spin-button
+{
+	-webkit-appearance: none; /* cache les flèches +/- (chrome, safari, opéra) */
+}
+
+.soumettre_prix
+{
+    display: block;
+    width: 50%;
+    margin: 2% auto;
+    padding: 5px 0 5px 0;
+    font-family: 'Cairo';
+    font-size: 1em;
+    font-weight: bold;
+    color: #FF8700;
+    background-color: rgba(255,255,255,.1);
+    border: 1px #FF8700 solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: color .3s linear, border .3s linear, width .3s linear;
+}
+
+.soumettre_prix:hover
+{
+    width: 55%;
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+    transition: color .3s linear, border .3s linear, width .3s linear;
+}
+
+.bouton_rejouer,
+.bouton_accueil
+{
+    display: none;
+    width: 50%;
+    margin: 2% auto;
+    padding: 5px 0 5px 0;
+    font-family: 'Cairo';
+    font-size: 1em;
+    font-weight: bold;
+    color: #FF8700;
+    background-color: rgba(255,255,255,.1);
+    border: 1px #FF8700 solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: color .3s linear, border .3s linear, width .3s linear;
+}
+
+.bouton_rejouer:hover,
+.bouton_accueil:hover
+{
+    width: 55%;
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+    transition: color .3s linear, border .3s linear, width .3s linear;
+}
+
+/*************************************/
+
+@media screen and (max-width: 427px)
+{
+    .container_accueil div p,
+    .container_accueil div:nth-child(2) > p span,
+    .bouton_commencer
+    {
+        font-size: 1em; 
+    }
+
+    .container_accueil div:nth-child(1) > p
+    {
+        font-size: 1.1em;
+    }
+}
+
+/*************************************/
+
+@media screen and (max-width: 393px) 
+{
+    .container_accueil div p,
+    .container_accueil div:nth-child(2) > p span,
+    .bouton_commencer 
+    {
+        font-size: .9em; 
+    }
+
+    .container_accueil div:nth-child(1) > p
+    {
+        font-size: 1.05em;
+    }
+
+    .container_jeux div p 
+    {
+        font-size: .9em;
+    }
+}
+
+/*************************************/
+
+@media screen and (max-width: 357px) 
+{
+    .container_accueil div p,
+    .container_accueil div:nth-child(2) > p span,
+    .bouton_commencer
+    {
+        font-size: .85em; 
+    }
+
+    .container_accueil div:nth-child(1) > p
+    {
+        font-size: 1em;
+    }
+}
+
+/*************************************/
+
+@media screen and (max-width: 340px)
+{
+    .container_accueil div p,
+    .container_accueil div:nth-child(2) > p span,
+    .bouton_commencer
+    {
+        font-size: .8em; 
+    }
+
+    .container_accueil div:nth-child(1) > p
+    {
+        font-size: .95em;
+    }
+}

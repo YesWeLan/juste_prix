@@ -1,0 +1,29 @@
+.cache_accueil
+{
+    display: none;
+}
+
+.affiche_jeux
+{
+    display: flex;
+}
+
+.confetti
+{
+    background: url('../img/anim/anim.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.vincent
+{
+    width: 40%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	animation-duration: .5s;
+	animation-name: toTop;
+	animation-timing-function: linear;
+}

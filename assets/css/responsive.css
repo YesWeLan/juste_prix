@@ -1,0 +1,292 @@
+@media screen and (max-width: 320px) 
+{   
+    header
+    {
+        min-height: 20vh;
+    }
+
+    .container_accueil
+    {
+        min-height: 80vh;
+    }
+
+    .container_accueil div p,
+    .container_accueil div:nth-child(2) > p span,
+    .bouton_commencer
+    {
+        font-size: .75em;
+    }
+
+    .container_accueil div:nth-child(1) > p
+    {
+        font-size: .9em;
+    }
+
+    .prix,
+    .indice,
+    .nombre_tentative
+    {
+        width: 80%;
+    }
+
+    .saisie_prix
+    {
+        width: 60%;
+        height: 30px;
+        font-size: .75em;
+    }
+
+    .soumettre_prix
+    {
+        font-size: .75em;
+        width: 60%;
+        padding: 10px 0 10px 0;
+    }
+
+    .soumettre_prix:hover,
+    .bouton_accueil:hover,
+    .bouton_rejouer:hover
+    {
+        width: 65%;
+    }
+
+    @media screen and (max-width: 310px) 
+    {
+        .container_accueil div p,
+        .container_accueil div:nth-child(2) > p span,
+        .bouton_commencer
+        {
+            font-size: .7em;
+        }
+
+        .container_accueil div:nth-child(1) > p
+        {
+            font-size: .85em;
+        }
+    }
+
+    @media screen and (max-width: 290px) 
+    {
+        .container_accueil div p,
+        .container_accueil div:nth-child(2) > p span,
+        .bouton_commencer
+        {
+            font-size: .65em;
+        }
+
+        .container_accueil div:nth-child(1) > p
+        {
+            font-size: .8em;
+        }
+    }
+
+    @media screen and (max-width: 275px) 
+    {        
+        .container_accueil div p,
+        .container_accueil div:nth-child(2) > p span,
+        .bouton_commencer
+        {
+            font-size: .6em;
+        }
+
+        .container_accueil div:nth-child(1) > p
+        {
+            font-size: .75em;
+        }
+
+        .prix,
+        .indice,
+        .nombre_tentative
+        {
+            width: 80%;
+        }
+
+        .saisie_prix
+        {
+            width: 60%;
+            height: 30px;
+            font-size: .7em;
+        }
+
+        .soumettre_prix,
+        .bouton_accueil,
+        .bouton_rejouer
+        {
+            font-size: .7em;
+            width: 60%;
+            padding: 10px 0 10px 0;
+        }
+
+        .soumettre_prix:hover,
+        .bouton_accueil:hover,
+        .bouton_rejouer:hover
+        {
+            width: 65%;
+        }
+    }
+
+    @media screen and (max-width: 255px) 
+    {
+        header,
+        .container_accueil div:nth-child(1),
+        .container_accueil div:nth-child(2)
+        {
+            display: none;
+        }
+
+        .container_accueil
+        {
+            min-height: 100vh;
+        }
+
+        .bouton_commencer
+        {
+            font-size: .6em;
+            width: 60%;
+            padding: 10px 0 10px 0;
+        }
+
+        .bouton_commencer:hover,
+        .bouton_commencer:focus
+        {
+            width: 65%;
+        }
+    }
+
+    @media screen and (max-width: 215px) 
+    {
+        .container_jeux div p
+        {
+            font-size: .6em;
+        }
+
+        .image
+        {
+            width: 100%;
+        }
+
+        .prix,
+        .indice,
+        .nombre_tentative
+        {
+            width: 100%;
+        }
+
+        .saisie_prix
+        {
+            width: 80%;
+            height: 20px;
+            font-size: .6em;
+        }
+
+        .soumettre_prix,
+        .bouton_accueil,
+        .bouton_rejouer
+        {
+            font-size: .6em;
+            width: 60%;
+            padding: 5px 0 5px 0;
+        }
+    }
+
+    @media screen and (max-width: 120px) 
+    {
+        html
+        {   
+            background-color: black;
+        }
+
+        body
+        {
+            display: none;
+        }
+
+    }
+}
+
+/*************************************/
+
+@media screen and (min-width: 481px) and  (max-width: 780px)
+{ 
+    @media screen and (min-width: 650px)
+    {
+        header,
+        .container_accueil,
+        .container_jeux
+        {
+            width: 40%;
+        }
+    }
+
+    @media screen and (min-width: 560px)
+    {
+        header,
+        .container_accueil,
+        .container_jeux
+        {
+            width: 65%;
+        }
+    }
+
+    @media screen and (min-width: 540px)
+    {
+        header,
+        .container_accueil,
+        .container_jeux
+        {
+            width: 80%;
+        }
+    }
+
+    @media screen and (min-width: 510px) and (max-width: 539px)
+    {
+        header,
+        .container_accueil,
+        .container_jeux
+        {
+            width: 85%;
+        }
+    }
+}
+
+/*************************************/
+
+@media screen and (min-width: 1280px)
+{
+    header,
+    .container_accueil,
+    .container_jeux
+    {
+        width: 800px;
+    }
+
+    .vincent
+    {
+        width: 30%;
+    }
+}
+
+/*************************************/
+
+@media screen and (min-width: 781px) and (max-width: 1279px)
+{
+    @media screen and (min-width: 900px)
+    {
+        header,
+        .container_accueil,
+        .container_jeux
+        {
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: 781px) and (max-width: 899px) 
+    {
+        header,
+        .container_accueil,
+        .container_jeux
+        {
+            width: 60%;
+        }
+    }
+}

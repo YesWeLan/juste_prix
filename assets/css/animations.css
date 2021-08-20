@@ -1,0 +1,81 @@
+@keyframes toTop
+{
+    from
+    {
+        transform: translateY(100%);
+    }
+
+    to
+    {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes toTop
+{
+    from
+    {
+        transform: translateY(100%);
+    }
+
+    to
+    {
+        transform: translateY(0);
+    }
+}
+
+/*************************************/
+
+@keyframes toBottom
+{
+    from
+    {
+        transform: translateY(0);
+    }
+
+    to
+    {
+        transform: translateY(100%);
+    }
+}
+
+@-webkit-keyframes toBottom
+{
+    from
+    {
+        transform: translateY(0);
+    }
+
+    to
+    {
+        transform: translateY(100%);
+    }
+}
+
+/*************************************/
+
+@keyframes rotate
+{
+    from
+    {
+    transform: rotateX(180deg);
+    }
+    
+    to
+    {
+    transform: rotateX(0);
+    }
+}
+
+@-webkit-keyframes rotate
+{
+    from
+    {
+    transform: rotateX(180deg);
+    }
+    
+    to
+    {
+    transform: rotateX(0);
+    }
+}

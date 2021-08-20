@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- META -->
+        <meta charset='utf-8'/>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'/>
+
+        <!-- TITLE -->
+        <title>Le Juste Prix</title>
+        
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Cairo:wght@300&display=swap" rel="stylesheet"/> 
+    
+        <!-- CSS -->
+        <link rel='stylesheet' type='text/css' href='assets/css/style.css'/>
+        <link rel='stylesheet' type='text/css' href='assets/css/class_js.css'/>
+        <link rel='stylesheet' type='text/css' href='assets/css/responsive.css'/>
+        <link rel="stylesheet" type="text/css" href="assets/css/animations.css"/>
+
+        <!-- FAVICON -->
+        <link rel="icon" href="assets/img/favicon.ico" />
+
+    </head>
+
+    
+    <body>
+    
+        <!-- HEADER -->
+        <header>
+            <img src="assets/img/logo.png" alt="logo du juste prix" id="logo"/>
+        </header>
+    
+        <!-- ACCUEIL -->
+        <div class="container_accueil">
+            <div>
+                <p>Règles du jeu</p>
+            </div>
+            <div>
+                <p><span>&#10148;</span> Vous devez deviner le juste prix du produit affiché</p>
+                <p><span>&#10148;</span> Vous avez 10 tentatives par produit</p>
+                <p><span>&#10148;</span> Les prix sont des entiers <i>(pas de chiffres à virgule)</i></p>
+                <p><span>&#10148;</span> Cliquez sur le bouton ci-dessous pour commencer</p>
+            </div>
+            <div>
+                <button class="bouton_commencer">Commencer</button>
+            </div>
+        </div>
+    
+        <!-- JEUX -->
+        <div class="container_jeux">
+            <div class="produit">
+                <p class="titre"></p>
+                <img class="image" alt="image d'objet"/>
+            </div>
+            <div class="saisie">
+                <p class="prix"></p>
+                <p class="indice"></p>
+                <p class="nombre_tentative"></p>
+                <form class="formulaire_saisie_prix">
+                    <input type="number" min="0" class="saisie_prix" pattern="[0-9]"/>
+                    <button type="submit" class="soumettre_prix">Soumettre</button>
+                    <button class="bouton_rejouer">Rejouer</button>
+                    <button class="bouton_accueil">Accueil</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- MUSIC -->
+        <div style="display: none;">
+            <audio class="audio" src="assets/audio/le_juste_prix.mp3" autoplay></audio>
+        </div>
+    
+        <!-- SCRIPT -->
+        <script type="text/javascript" src="assets/js/fonctions.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    
+    </body>
+</html>    
